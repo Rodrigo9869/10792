@@ -1,0 +1,2 @@
+POST http://localhost:2525/imposters
+Content-Type: application/json
