@@ -5,9 +5,35 @@ Content-Type: application/json
     "port":4502,
     "protocol":"http",
     "name":"Exercicio2",
-    "stubs"[{
+    "stubs":[{
         "responses":[
-            {"is":}
-        ]
+            {"is":{"statuscode":200,
+                "body":{"Marca":"Toyota",
+                        "id":1,
+                        "Modelo":"Supra",
+                        "preço":5000}}}
+        ],
+        "predicates":[{
+            "and":[
+                    {
+                    "equals":{
+                        "path":"/api/cars",
+                        "method":"GET",
+                        "headers":{"Content-Type":"application/json"},
+                        "query":{"Marca":"Toyota"}
+                        }
+                        },
+                    {
+                    "not":{
+                        "contains":{"body":"requiredField"},
+                        "caseSensitive":true
+                    }
+                }
+            ]
+        }]
     }]
 }
+
+###
+GET http://localhost:4502/api/cars?brand=Toyota
+Content-Type: application/json
