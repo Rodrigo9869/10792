@@ -2,9 +2,9 @@ POST http://localhost:2525/imposters
 content-Type: application/json
 
 {
-   "port":4508,
+   "port":4509,
    "protocol":"http",
-   "name":"Exercicio8",
+   "name":"Exercicio9",
    "stubs":[
       {
          "responses":[
@@ -42,7 +42,7 @@ content-Type: application/json
 }
 
 ###
-POST http://localhost:4508/api/temperature
+POST http://localhost:4509/api/temperature
 content-Type: application/json
 
 {"value":"string"}
