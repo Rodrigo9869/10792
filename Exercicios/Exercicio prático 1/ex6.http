@@ -2,7 +2,7 @@ POST http://localhost:2525/imposters
 content-Type: application/json
 
 {
-   "port":4556,
+   "port":4506,
    "protocol":"http",
    "name":"Exercicio6",
    "stubs":[
