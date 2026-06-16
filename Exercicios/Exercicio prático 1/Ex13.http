@@ -2,8 +2,8 @@ POST http://localhost:2525/imposters
 Content-Type: application/json
 
 {
-  "name": "Ex13",
-  "port": 4563,
+  "name": "Exercicio13",
+  "port": 4513,
   "protocol": "http",
   "stubs": [
     {
@@ -57,16 +57,12 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:4563/api/profile
+GET http://localhost:4513/api/profile
 authorization: Bearer validtoken
 
 ###
-GET http://localhost:4563/api/profile
+GET http://localhost:4513/api/profile
 
 ###
-GET http://localhost:4563/api/profile
+GET http://localhost:4513/api/profile
 authorization: Bearer tokeninvalido
-
-###
-DELETE http://localhost:2525/imposters/4563
-Content-Type: application/json

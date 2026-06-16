@@ -2,8 +2,8 @@ POST http://localhost:2525/imposters
 Content-Type: application/json
 
 {
-  "name": "Ex14",
-  "port": 4564,
+  "name": "Exercicio14",
+  "port": 4514,
   "protocol": "http",
   "stubs": [
     {
@@ -36,8 +36,6 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:4564/api/login
+POST http://localhost:4514/api/login
 Content-Type: text/plain
 
-###
-POST http://localhost:4564/api/qualquer
