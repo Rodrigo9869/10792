@@ -150,7 +150,7 @@ POST http://localhost:4521/api/alunos
 Content-Type: application/json
 
 {
-  "nome":"ana",
+  "nome":"FRANCISCO",
   "idade":14,
   "curso":"inexistente"
 }
